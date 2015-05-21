@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="sandboxPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DAO.Tecnologia</class>
+    <class>DAO.Proyectoxmateria</class>
+    <class>DAO.Auditoria</class>
+    <class>DAO.BaseDeDatosxinstancia</class>
+    <class>DAO.Materia</class>
+    <class>DAO.Instancia</class>
+    <class>DAO.Servidor</class>
+    <class>DAO.BaseDeDatos</class>
+    <class>DAO.Proyecto</class>
+    <class>DAO.TipoUsuario</class>
+    <class>DAO.Tecnologiaxinstancia</class>
+    <class>DAO.Usuario</class>
+    <class>DAO.Proyectoxusuario</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/sandbox"/>
+      <property name="javax.persistence.jdbc.password" value="q8wKm9GdSDhwZabs"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+    </properties>
+  </persistence-unit>
+</persistence>
